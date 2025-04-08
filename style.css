@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensures consistent sizing */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+.nav {
+    background-color: #2dabb0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* Proper spacing */
+    padding: 0 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-left: 60px;
+}
+
+/* Search Bar */
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 800px;
+    margin-left: 40px;
+
+    /* Centering */
+}
+
+.input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px 10px 20px;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+#searchIcon {
+    position: absolute;
+    right: 15px;
+    color: gray;
+    cursor: pointer;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: 40px;
+    /* Properly positioned to the right */
+    transition: background 0.3s ease-in-out;
+}
+
+
+
+#user {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.signIn {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff9f9;
+    margin: 0;
+}
+
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Space between icon and text */
+    cursor: pointer;
+    /* Indicates it's clickable */
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-left: 30px;
+    transition: background 0.3s ease-in-out;
+}
+
+
+
+.cart i {
+    font-size: 20px;
+    /* Adjust icon size */
+    color: #ffffff;
+    /* Icon color */
+}
+
+#cart {
+    font-size: 16px;
+    /* Adjust text size */
+    font-weight: 500;
+    color: #fff9f9;
+    /* Text color */
+    margin: 0;
+}
+
+#carouselExampleIndicators img {
+    object-fit: fill;
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sliders{
+    cursor: pointer;
+}
+
+.shopping {
+    margin-top: 30px;
+}
+
+
+
+.topSellers {
+    background-color: #86b3bc;
+    margin-top: 30px;
+    width: auto;
+    height: 350px;
+    padding: 40px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topSellers h4 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* border-bottom: 3px solid #2b737c; */
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.topSellersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product {
+    background-color: #ffffff;
+    /* border: 1.5px solid #ccc; */
+    border-radius: 10px;
+    /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); */
+    padding: 15px;
+    margin-left: 50px;
+    width: 220px;
+    height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.product input[type="button"] {
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #228e91;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product input[type="button"]:hover {
+    background-color: #db6075;
+    transform: scale(1.05);
+}
