@@ -11,15 +11,16 @@
     <div class="loginForm">
         <form action="">
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Enter your email" required>
+            <input id="email" type="text" id="email" name="email" placeholder="Enter your email" required>
 
             <label for="password">Password</label>
-            <input type="text" placeholder="Enter your Password" required>
+            <input id="password" type="text" name="password" placeholder="Enter your Password" required>
             <input type="submit" value="Login">
             <p>Don't have an account? <a href="register.html">Register</a></p>
+            <p id="error">You don't have an account please Sign UP</p>
         </form>
     </div>
 
-    
+    <script src="login.js"></script>
 </body>
 </html>

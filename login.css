@@ -82,3 +82,7 @@ a {
 a:hover {
     color: #2dabb0;
 }
+ #error{
+    color: red;
+    display:none;
+ }
