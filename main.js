@@ -5,3 +5,11 @@ login.addEventListener("click",()=>{
 
 
 })
+
+const HomeAppliances =document.querySelector('.HomeAppliances');
+
+HomeAppliances.addEventListener("click",()=>{
+    window.location.href="HomeApplianceCategory/appliances.html";
+
+
+})
