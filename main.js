@@ -52,3 +52,7 @@ logout.addEventListener("click", () => {
     window.location.reload();     
 });
 
+const cart =document.querySelector(".cart");
+cart.addEventListener("click",()=>{
+    window.location.href="/Cart/cart.html";
+})

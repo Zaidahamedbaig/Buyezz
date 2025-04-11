@@ -22,7 +22,7 @@ form.addEventListener("submit", (e) => {
         });
 
         if (!found) {
-            error.style.display = "block"; 
+            error.style.display = "block";
             error.textContent = "Invalid email or password.";
         }
     } else {
