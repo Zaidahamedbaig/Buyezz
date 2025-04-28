@@ -6,6 +6,8 @@ form.addEventListener("submit", function (e) {
     formData.forEach((value, key) => {
         data[key] = value;
     })
+    console.log(formData);
+    
 
     const db = localStorage.getItem("myDB");
     let parsedDB = JSON.parse(db);
@@ -17,6 +19,7 @@ form.addEventListener("submit", function (e) {
 
     localStorage.setItem("myDB", JSON.stringify(parsedDB))
     localStorage.setItem("currentUser", JSON.stringify(data))
+
 
     window.location.reload();
     alert("Sign UP Sucessfull");

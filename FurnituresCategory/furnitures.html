@@ -3,284 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="appliances.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    
     <title>Buyezz/furnitures</title>
     <link rel="icon" type="image/png" href="../logo.png" />
-    <link rel="stylesheet" href="furniture.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
-  <body>
-    <div class="nav">
-      <nav class="appliancesNav">
-        <img src="../logo.png" alt="" srcset="" />
-        <h2>Furnitures</h2>
-      </nav>
-    </div>
+  <body class="w-100 h-100" style="background-color: #d1eef0">
+    <nav
+      class="navbar d-flex align-items-center justify-content-between"
+      style="background-color: #2dabb0; height: 60px; padding: 0 60px"
+    >
+      <a class="navbar-brand m-0" href="#">
+        <img
+          src="../logo.png"
+          alt="Logo"
+          class="rounded-3"
+          style="width: 100px; height: 40px; object-fit: cover"
+        />
+      </a>
+      <h2>Furnitures</h2>
+      <a href="" class="text-decoration-none">
+        <div
+          class="cart d-flex align-items-center text-white"
+          style="gap: 8px; font-size: 20px"
+        >
+          <i class="fa-solid fa-cart-shopping fa-lg"></i>
+          <p id="cart" class="m-0">Cart</p>
+        </div>
+      </a>
+    </nav>
 
-    <div class="products">
-      <div class="card-group">
-        <div class="card">
-          <img
-            src="FurnituresImages/sofa.jpg"
-            class="card-img-top"
-            alt="sofa"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Modern Sofa</h5>
+    <div
+      class="d-flex flex-wrap w-auto mx-1 mt-4 categories justify-content-center furnitures"
+      style="transition: transform 0.3s ease, box-shadow 0.3s ease"
+    >
+ </div>
 
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹15,000</span>
-              <small style="color: rgb(24, 27, 30); margin-left: 10px"
-                >M.R.P <s>₹19,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="FurnituresImages/coffeeTable.jpg"
-            class="card-img-top"
-            alt="coffeeTable"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Coffee Table</h5>
+    <script type="module" src="furnitures.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹2,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹3,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="FurnituresImages/diningTable.jpg"
-            class="card-img-top"
-            alt="Dining Table"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Dining Table</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹12,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹18,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script
+      src="https://kit.fontawesome.com/18daee3562.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <div class="products">
-      <div class="card-group">
-        <div class="card">
-          <img
-            src="FurnituresImages/bedframe.jpg"
-            class="card-img-top"
-            alt="Bed Fame"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bed Frame</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹20,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹23,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="FurnituresImages/tvStand.jpg"
-            class="card-img-top"
-            alt="TV stand"
-          />
-          <div class="card-body">
-            <h5 class="card-title">TV stand</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹10,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹14,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="FurnituresImages/armChair.jpg"
-            class="card-img-top"
-            alt="Armchair"
-          />
-          <div class="card-body">
-            <h5 class="card-title">ArmChair</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹8,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹10,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="products">
-      <div class="card-group">
-        <div class="card">
-          <img
-            src="FurnituresImages/bookshelf.jpg"
-            class="card-img-top"
-            alt="Bookshelf"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bookshelf</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹6,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹9,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="FurnituresImages/studyDesk.jpg"
-            class="card-img-top"
-            alt="Study Desk"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Study Desk</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹4,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹7,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="FurnituresImages/nightStand.jpg"
-            class="card-img-top"
-            alt="Nightstand"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Nightstand</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹3,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹7,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="products">
-      <div class="card-group">
-        <div class="card">
-          <img
-            src="FurnituresImages/recliner.jpg"
-            class="card-img-top"
-            alt="Recliner"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Recliner</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹21,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹27,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="FurnituresImages/barStools.jpg"
-            class="card-img-top"
-            alt="Bar Stools"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bar Stools</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹8,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹14,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="FurnituresImages/loundeChair.jpg"
-            class="card-img-top"
-            alt="Lounge Chair"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Lounge Chair</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹6,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹9,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="products">
-      <div class="card-group">
-        <div class="card">
-          <img
-            src="FurnituresImages/warDrobe.jpg"
-            class="card-img-top"
-            alt="Wardrobe"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Wardrobe</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹17,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹23,500</s></small
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="FurnituresImages/officeChair.jpg"
-            class="card-img-top"
-            alt="Office Chair"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Office Chair</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹7,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹10,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="FurnituresImages/shoeRack.jpg"
-            class="card-img-top"
-            alt="Shoe Rack"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Shoe Rack</h5>
-            <div class="card-text">
-              <span style="font-size: 1.5rem; font-weight: bold">₹1,000</span>
-              <small style="color: rgb(30, 37, 43); margin-left: 10px"
-                >M.R.P <s>₹2,000</s></small
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   
   </body>
 </html>

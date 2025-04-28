@@ -1,6 +1,6 @@
 const data = localStorage.getItem("myDB");
 const usersInfo = JSON.parse(data);
-const form = document.querySelector("form");
+let form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -23,7 +23,8 @@ form.addEventListener("submit", (e) => {
 
         if (!found) {
             error.style.display = "block";
-            error.textContent = "Invalid email or password.";
+            error.textContent = "No users found. Please register first.";
+
         }
     } else {
         error.style.display = "block";
